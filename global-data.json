@@ -1,15 +1,27 @@
 {
 	"menuItems": [
 		{
-			"name": "Menu Item 1",
+			"name": "Women’s",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 2",
+			"name": "Men’s",
 			"path": "#"
 		},
 		{
-			"name": "Menu Item 3",
+			"name": "Home",
+			"path": "#"
+		},
+		{
+			"name": "Travel",
+			"path": "#"
+		},
+		{
+			"name": "Beauty",
+			"path": "#"
+		},
+		{
+			"name": "Sale",
 			"path": "#"
 		}
 	],

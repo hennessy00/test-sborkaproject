@@ -1,14 +1,5 @@
-// import { gsap } from 'gsap';
-
-// import { ScrollToPlugin } from 'gsap/ScrollToPlugin.js';
-// gsap.registerPlugin(ScrollToPlugin);
-
-// global.gsap = gsap;
-
-// gsap.defaults({
-// 	overwrite: 'auto',
-// });
-
+// import * as IMask from './utils/imask.min.js';
+import IMask from 'imask';
 class ProjectApp {
 	constructor() {
 		this.env = require('./utils/env').default;
@@ -16,7 +7,9 @@ class ProjectApp {
 		this.classes = {
 			// Signal: require('./classes/Signal').default,
 		};
-		this.components = {};
+		this.components = {
+			billing: require('./billing'),
+		};
 		this.helpers = {};
 		this.modules = {};
 		document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,39 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+{% macro cartItem(props) %}
+	<div class="billing-cart__item" data-cost="{{ props.cost }}">
+		<div class="billing-cart__item-img">
+			<img src="{{ props.img}}" alt="">
+		</div>
+		<div class="billing-cart__item-body">
+			<div class="billing-cart__item-title">
+				Amet minim mollit non deserunt ullamco est sit
+			</div>
+			<div class="billing-cart__item-bottom">
+				<div class="billing-cart__counter">
+					<div class="billing-cart__counter-btn" data-handler="minus">
+						{{ icon({
+							iconName: 'minus',
+							attr: 'viewBox="0 0 21 20" style="width: 20px; height: 20px;"'
+						}) }}
+					</div>
+					<div class="billing-cart__counter-num">1</div>
+					<div class="billing-cart__counter-btn" data-handler="plus">
+						{{ icon({
+							iconName: 'plus',
+							attr: 'viewBox="0 0 21 20" style="width: 20px; height: 20px;"'
+						}) }}
+					</div>
+				</div>
+				<div class="billing-cart__cost" data-all-cost="{{ props.cost }}">
+					$ {{ props.cost }}
+				</div>
+			</div>
+		</div>
+		<div class="billing-cart__item-del">
+			{{ icon({
+				iconName: 'exit',
+				attr: 'viewBox="0 0 18 18" style="width: 18px; height: 18px;"'
+			}) }}
+		</div>
+	</div>
+{% endmacro %}
